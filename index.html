@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+	<title>Todo List</title>
+	<link rel="shortcut icon" href="pictures/favicon-check-square.ico" />
+
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- My External Files -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+	<!-- Google Maps API -->
+	<link href="http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+	<!-- JQuery mobile -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<h2 class="header">Todo-List App</h2>
+         <select id="item_color">
+            <option value="#33CCCC">Pick type!</option>
+            <option class="green" value="#33CCCC">Simple task</option>
+            <option class="red" value="rgb(190,116,189)">Important</option>
+            <option class="blue" value="#66CCFF">Job</option>
+            <option class="gray" value="rgb(213,213,213)">Personal</option>
+        </select>
+		<form class="form">
+			<input type="text" id="name" placeholder="New item! Make it unique :)">
+		  	<input type="date" id="date">
+			<button class="ui-btn ui-icon-heart ui-btn-icon-right" id="add">Add task!</button>
+		</form>
+		<br>
+
+		<ul class="todo"></ul>
+		<!-- <button class="clear">Clear localStorage</button> -->
+		<div id="map-canvas" style="width:100%;height:300px;"></div><br>
+	</div>
+	</div>
+</body>
+</html>

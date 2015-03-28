@@ -1,0 +1,115 @@
+* {
+    margin:0;
+    padding:0;
+}
+.header {
+    text-align:center;
+    font-size:2.2em;
+    font-weight:bold;
+    border-radius: 20px 20px 0 0;
+    background-color: #33CCCC;
+    padding:0.7em 0;
+    padding-right:1.2em;
+    border:2px solid rgb(213,213,213);
+    text-shadow:none;
+}
+#name {
+    font-size:1.6em;
+}
+#date {
+    font-size:1.5em;
+}
+.item_blue:hover, .item_red:hover, .item_gray :hover, .item_green:hover {
+    cursor:pointer;
+}
+#item_color-button.ui-btn.ui-icon-carat-d.ui-btn-icon-right.ui-corner-all.ui-shadow, div.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+    border-radius: 20px 0;
+    font-family:"Helvetica";
+}
+#item_color-button.ui-btn.ui-icon-carat-d.ui-btn-icon-right.ui-corner-all.ui-shadow {
+    font-size:2em;
+}
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+    height:2em;
+    width:2em;
+    top:0.7em;
+}
+#not-done {
+    font-size:2em;
+    font-weight:bold;
+}
+.sub {
+    color:rgb(140, 139, 140);
+    margin-left:2.2em;
+}
+ul {
+    list-style:none;
+}
+#done {
+    text-decoration:line-through;
+    font-size:2em;
+    font-weight:bold;
+    opacity:0.3;
+}
+.new-task {
+    margin:2em 0;
+}
+#hideShow .show {
+    display: inline;
+}
+#hideShow .hide {
+    display: none;
+}
+@-webkit-keyframes greenPulse {
+    from {
+        background-color: #33CCCC;
+        -webkit-box-shadow: 0 0 9px #66CCFF;
+    }
+    50% {
+        background-color: #66CCFF;
+        -webkit-box-shadow: 0 0 18px #66CCFF;
+    }
+    50% {
+        background-color: #33CCFF;
+        -webkit-box-shadow: 0 0 18px #33CCFF;
+    }
+    to {
+        background-color: #33CCCC;
+        -webkit-box-shadow: 0 0 9px #66CCFF;
+    }
+}
+#add {
+    font-size:2.1em;
+    border-radius: 20px 0;
+    -webkit-animation-name: greenPulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+.red {
+    color: rgb(190,116,189);
+}
+.green {
+    color: #33CCCC;
+}
+.blue {
+    color: #66CCFF;
+}
+.gray {
+    color: rgb(213,213,213);
+}
+.delete {
+    font-size:2em;
+    background-color: #33CCCC;
+    color:white;
+    border-radius: 20px 0;
+    float:right;
+    padding:0.05em;
+}
+.name {
+    cursor:pointer;
+}
+@media screen and (max-width:480px) {
+    .header {
+        padding-right:0;
+    }
+}
